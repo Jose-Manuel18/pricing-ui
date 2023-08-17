@@ -2,8 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 
-export const inter = Inter({ subsets: ["latin"] });
-export const montserrat = Montserrat({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,

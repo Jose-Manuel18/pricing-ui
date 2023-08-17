@@ -1,9 +1,10 @@
 "use client";
 
-import { montserrat } from "./layout";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"] });
 interface PricingProps {
   id: number;
   title: string;
