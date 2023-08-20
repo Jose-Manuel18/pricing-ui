@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 md:grid-cols-3 ">
         {plans.map((item) => {
           const isFirstTwoPlans = [1, 2].includes(item.id);
           return (
@@ -145,8 +145,9 @@ export default function Home() {
                   {item.plan}
                 </span>
               </div>
-
-              <p className="text-secondary text-xs">{item.title}</p>
+              <div className="lg:h-10 md:h-12">
+                <p className="text-secondary text-xs">{item.title}</p>
+              </div>
               <div className="flex flex-row items-end">
                 <span
                   className={`text-primary font-semibold text-4xl  ${montserrat.className}`}
